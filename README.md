@@ -8,7 +8,7 @@ This blog is built using HTML and CSS, hosted directly on GitHub Pages.
 
 ## Writing New Posts
 
-1. Create a new markdown file in the `posts/markdown/` directory with a `.md` extension.
+1. Create a new markdown file in the `posts/` directory with a `.md` extension.
 2. Add YAML front matter at the top of your markdown file:
    ```yaml
    ---
@@ -19,7 +19,7 @@ This blog is built using HTML and CSS, hosted directly on GitHub Pages.
 3. Write your post content in markdown format below the front matter.
 4. Run the conversion script to generate the HTML:
    ```bash
-   python3 scripts/md_to_html.py posts/markdown/your-post.md templates/post.html
+   python3 scripts/md_to_html.py posts/your-post.md templates/post.html
    ```
 
 ### Markdown Features Supported

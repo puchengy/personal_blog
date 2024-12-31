@@ -49,9 +49,9 @@ def convert_md_to_html(md_file, template_file):
     html = html.replace('{{date}}', date)
     html = html.replace('{{content}}', html_content)
     
-    # Generate output filename
+    # Generate output filename in the same directory
     basename = os.path.splitext(os.path.basename(md_file))[0]
-    output_file = os.path.join(os.path.dirname(md_file), '..', f'{basename}.html')
+    output_file = os.path.join(os.path.dirname(md_file), f'{basename}.html')
     
     with open(output_file, 'w', encoding='utf-8') as f:
         f.write(html)
