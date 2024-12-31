@@ -78,6 +78,20 @@ nav a:hover {
     background: #0056b3;
 }
 
+.comments-section {
+    margin-top: 2rem;
+    padding: 1rem;
+    background: #fff;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+}
+
+.comments-section h3 {
+    margin-top: 0;
+    color: var(--primary-color);
+    margin-bottom: 1rem;
+}
+
 footer {
     text-align: center;
     padding: 2rem 0;
