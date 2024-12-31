@@ -16,11 +16,7 @@ This blog is built using HTML and CSS, hosted directly on GitHub Pages.
    date: Month DD, YYYY
    ---
    ```
-3. Write your post content in markdown format below the front matter.
-4. Run the conversion script to generate the HTML:
-   ```bash
-   python3 scripts/md_to_html.py posts/your-post.md templates/post.html
-   ```
+3. Write your post content in markdown format below the front matter. The content will be automatically converted to HTML using the template when displayed on the website.
 
 ### Markdown Features Supported
 
