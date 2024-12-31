@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>My First Blog Post - Pucheng's Personal Blog</title>
+    <title>{{title}} - Pucheng's Personal Blog</title>
     <link rel="stylesheet" href="../css/style.css">
     <link rel="stylesheet" href="../css/markdown.css">
 </head>
@@ -20,20 +20,9 @@
 
     <main class="container">
         <article class="post-card markdown-body">
-            <h1>My First Blog Post</h1>
-            <div class="post-meta">Published on December 31, 2024</div>
-            <h1 id="my-first-blog-post">My First Blog Post</h1>
-<p>Welcome to my first blog post! This is the beginning of my journey in sharing thoughts,
-experiences, and knowledge with the world. Through this blog, I aim to document my
-learning experiences and connect with like-minded individuals.</p>
-<p>In this space, I'll be writing about various topics that interest me, including:</p>
-<ul>
-<li>Technology and Programming</li>
-<li>Personal Development</li>
-<li>Project Updates</li>
-<li>Learning Resources</li>
-</ul>
-<p>Stay tuned for more content coming soon!</p>
+            <h1>{{title}}</h1>
+            <div class="post-meta">Published on {{date}}</div>
+            {{content}}
         </article>
 
         <div class="comments-section">
