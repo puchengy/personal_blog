@@ -1,53 +1,26 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>{{title}} - Pucheng's Personal Blog</title>
-    <link rel="stylesheet" href="../css/style.css">
-    <link rel="stylesheet" href="../css/markdown.css">
-</head>
-<body>
-    <header>
-        <div class="container">
-            <h1>Pucheng's Personal Blog</h1>
-            <nav>
-                <a href="../index.html">Home</a>
-                <a href="../posts.html">All Posts</a>
-            </nav>
-        </div>
-    </header>
+{{root=../}}
+{{extra_css=<link rel="stylesheet" href="../css/markdown.css">}}
 
-    <main class="container">
-        <article class="post-card markdown-body">
-            <h1>{{title}}</h1>
-            <div class="post-meta">Published on {{date}}</div>
-            {{content}}
-        </article>
+<article class="post-card markdown-body">
+    <h1>{{title}}</h1>
+    <div class="post-meta">Published on {{date}}</div>
+    {{content}}
+</article>
 
-        <div class="comments-section">
-            <h3>Comments</h3>
-            <div id="disqus_thread"></div>
-            <script>
-                var disqus_config = function () {
-                    this.page.url = window.location.href;
-                    this.page.identifier = window.location.pathname;
-                };
-                (function() {
-                    var d = document, s = d.createElement('script');
-                    s.src = 'https://pucheng-blog.disqus.com/embed.js';
-                    s.setAttribute('data-timestamp', +new Date());
-                    (d.head || d.body).appendChild(s);
-                })();
-            </script>
-            <noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
-        </div>
-    </main>
-
-    <footer>
-        <div class="container">
-            <p>&copy; 2024 Pucheng's Personal Blog. All rights reserved.</p>
-        </div>
-    </footer>
-</body>
-</html>
+<div class="comments-section">
+    <h3>Comments</h3>
+    <div id="disqus_thread"></div>
+    <script>
+        var disqus_config = function () {
+            this.page.url = window.location.href;
+            this.page.identifier = window.location.pathname;
+        };
+        (function() {
+            var d = document, s = d.createElement('script');
+            s.src = 'https://pucheng-blog.disqus.com/embed.js';
+            s.setAttribute('data-timestamp', +new Date());
+            (d.head || d.body).appendChild(s);
+        })();
+    </script>
+    <noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+</div>
